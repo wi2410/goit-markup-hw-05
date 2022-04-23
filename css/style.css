@@ -11,6 +11,7 @@
 --icon-color: #AFB1B8;
 --primary-font: 'Roboto';
 --secondary-font: 'Raleway';
+--cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -104,7 +105,7 @@ h1, h2, h3, h4, p, ul {
   color: var(--primary-text-color);
   padding: 32px 0;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic);
 }
 .contact .contacts {
   line-height: 1.2;
@@ -120,8 +121,8 @@ h1, h2, h3, h4, p, ul {
   line-height: 1.7;
   color: var(--title-text-color);
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic),
+  fill 250ms var(--cubic);
 }
 .nav:hover, 
 .nav:focus,
@@ -181,7 +182,7 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic);
 }
 .button:hover,
 .button:focus {
@@ -200,9 +201,9 @@ address {
   color: var(--primary-text-color);
   padding: 6px 22px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic),
+  color 250ms var(--cubic),
+  box-shadow 250ms var(--cubic);
 }
 .button-portfolio:hover, 
 .button-portfolio:focus {
@@ -393,8 +394,8 @@ img {
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms var(--cubic),
+  fill 250ms var(--cubic);
 }
 .client:hover,
 .client:focus {
@@ -407,7 +408,7 @@ img {
   display: block;
   position: relative;
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--cubic);
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -447,7 +448,7 @@ img {
   align-items: center;
   justify-content: center;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic);
 }
 .footer-social:hover,
 .footer-social:focus {
@@ -472,8 +473,8 @@ img {
   justify-content: center;
   border-radius: 50%;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic),
+  fill 250ms var(--cubic);
 }
 .team-social:hover,
 .team-social:focus {
@@ -519,7 +520,7 @@ img {
   left: 0;
 
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--cubic);
 }
 
 .portfolio-link:hover .product-actions {
@@ -570,7 +571,7 @@ img {
   height: 100%;
 
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms var(--cubic);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -595,7 +596,7 @@ img {
   border-radius: 4px; 
   padding: 15px;
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--cubic);
 }
 .btn-modal {
   position: absolute;
